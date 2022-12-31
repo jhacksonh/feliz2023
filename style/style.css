@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'grandHotel';
+    src: url('../assets/fonts/GrandHotel-Regular.otf') format(opentype), url('../assets/fonts/Snickles.ttf') format(truetype), url('../assets/fonts/FascinateInline-Regular.otf') format('truetype');
+    font-weight: normal;
+}
+
+* {
+    font-family: 'grandHotel', times;
+    background: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('../assets/imgs/fd_body.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+}
+
+header {
+    background-color: #9554;
+    position: absolute;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+header h1 {
+    text-align: center;
+    color: #222;
+    text-shadow: 0px 0px 5px #955;
+    width: min-content;
+    animation: ani_tit .5s linear 1s infinite;
+}
+
+section {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: #cc0;
+    padding: 16px;
+    padding: 15px;
+    border: 2px dotted #955;
+    width: 90%;
+    min-height: 60%;
+}
+
+.div_logo {
+    text-align: center;
+    margin: 10px;
+    animation: ani_emote 1s linear 1s infinite;
+}
+
+.div_logo img {
+    width: 120px;
+}
+
+.form_login {
+    text-align: center;
+}
+
+.form_login h1 {
+    color: #fff;
+    margin: 15px;
+    font-family: times;
+    text-shadow: 0px 0px 5px #222;
+    font-size: 30px;
+    animation: ani_tit 1s linear 1s infinite;
+}
+
+.form_login input,
+.form_login button {
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #2225;
+    color: #fff;
+}
+
+.form_login input {
+    border-bottom: 3px solid #0c0;
+    margin-bottom: 15px;
+    min-width: 300px;
+    width: 100%;
+}
+
+.form_login input:focus {
+    background-color: #fff;
+    color: #000;
+    border-bottom: 3px solid #0ff;
+}
+
+.form_login button {
+    border: 2px solid #0ff;
+    margin: 15px;
+    width: 40%;
+}
+
+.form_login button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #0c0;
+}
+.atc_content{
+    text-align: center;
+    width: 100%;
+    min-height: 100%;
+}
+.atc_content h1,.atc_content h3,.atc_content p{
+    margin: 10px;
+    font-size: 27px;
+    color: #333;
+    text-shadow: 0px 0px 3px #CCC;
+    font-family: times;
+    border-bottom: 3px solid #0c0;
+    border-radius: 10px;
+    animation: ani_emote 1s linear 1s infinite;
+}
+.atc_content p{
+    font-size: 20px;
+    text-align: justify;
+    border: 2px solid #0ff;
+    font-family: 'grandHotel', times;
+    padding: 10px;
+    animation: none;
+}
+footer {
+    background-color: #9554;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 100%;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+    transform: translate(0%, -100%);
+}
+
+
+/*animation: ani_tit 2s linear 1s infinite;*/
+@keyframes ani_tit {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/*animation: ani_emote .5s linear 1s infinite;*/
+@keyframes ani_emote {
+    0% {
+        transform: scale(1);
+    }
+
+    /*25%{
+        transform: scale(1.1);
+    }*/
+    50% {
+        transform: scale(1.1);
+    }
+
+    /* 75%{
+        transform: scale(1.1);
+    }*/
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*animation: txt .3s ease*/
+@keyframes txt {
+    0% {
+        transform: scale(0);
+        transform: rotate(90deg);
+        font-size: 1px;
+        min-height: 1px;
+        max-width: 1px;
+    }
+
+    50% {
+        transform: scale(-1);
+        transform: rotate(180deg);
+        font-size: 1px;
+        min-height: 100px;
+        max-width: 100px;
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+/*animation:data 2s ease forwards*/
+@keyframes data {
+    0% {
+        transform: scale(0.3) rotate(90deg);
+        /*transform: rotate(90deg);*/
+    }
+
+    50% {
+        transform: scale(0.7) rotate(180deg);
+        /*transform: rotate(180deg);*/
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+        /*transform: rotate(360deg);*/
+    }
+}
