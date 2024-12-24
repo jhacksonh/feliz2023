@@ -20,7 +20,7 @@ body {
     background-image: url('../assets/imgs/fd_body.jpg');
     background-size: cover;
     height: 100dvh;
-    width: 100dvw;
+    width: 100%;
 }
 
 main {
