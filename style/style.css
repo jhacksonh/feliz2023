@@ -19,8 +19,8 @@
 body {
     background-image: url('../assets/imgs/fd_body.jpg');
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
 }
 
 main {
@@ -30,7 +30,7 @@ main {
 }
 
 header {
-    background-color: #9554;
+    background-color: #3ba4faaa;
     position: absolute;
     width: 100%;
     border-bottom: 2px solid #ccc;
@@ -54,7 +54,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-    background-color: #cc0;
+    background-color: #61faae99;
     padding: 16px;
     padding: 15px;
     border: 2px dotted #955;
@@ -91,19 +91,20 @@ section {
     font-weight: bolder;
     padding: 15px;
     border-radius: 10px;
-    background-color: #2225;
-    color: #fff;
+    background-color: #3ba4faaa;;
+    color: #000;
 }
 
 .form_login input {
     border-bottom: 3px solid #0c0;
     margin-bottom: 15px;
     min-width: 300px;
-    width: 100%;
+    width: 50%;
+    height: 50px;
 }
 
 .form_login input:focus {
-    background-color: #fff;
+    background-color: #ccc;
     color: #000;
     border-bottom: 3px solid #0ff;
 }
@@ -115,7 +116,7 @@ section {
 }
 
 .form_login button:hover {
-    background-color: #fff;
+    background-color: #0c0;
     color: #000;
     border: 2px solid #0c0;
 }
@@ -143,7 +144,7 @@ section {
     animation: none;
 }
 footer {
-    background-color: #9554;
+    background-color: #3ba4faaa;;
     position: absolute;
     height: 100px;
     width: 100%;
