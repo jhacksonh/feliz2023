@@ -154,6 +154,20 @@ footer {
     border-top: 2px solid #ccc;
     transform: translate(0%, -100%);
 }
+@media only screen and (max-width: 768px) {
+    .form_login input {
+        border-bottom: 3px solid #0c0;
+        margin-bottom: 15px;
+        min-width: 300px;
+        width: 100%;
+        height: 60px;
+    }
+    .form_login button {
+        border: 2px solid #0ff;
+        margin: 15px;
+        width: 60%;
+    }
+}
 
 
 /*animation: ani_tit 2s linear 1s infinite;*/
