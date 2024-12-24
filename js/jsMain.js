@@ -5,8 +5,9 @@ let atc_content = document.querySelector(".atc_content");
 let form_secion = document.querySelector(".section_form");
 let content_secion = document.querySelector(".section_content");
 btn_cfmr.addEventListener('click', () => {
-    let n = name.value.toLowerCase();
-    let p = pass.value.toLowerCase();
+    let n = Capitalizar(name.value);
+    let p = Capitalizar(pass.value);
+    console.log(n+" "+p);
     if (n !== "" && p !== "") {
         let nEncript = Encriptar(n);
         let pEncript = Encriptar(p);
@@ -22,3 +23,9 @@ btn_cfmr.addEventListener('click', () => {
         alert('Preencha todos o campos');
     }
 });
+function Capitalizar(string) {
+    if (string.length > 1) {
+        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+    }
+    return "";
+}
