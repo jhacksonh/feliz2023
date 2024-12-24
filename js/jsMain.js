@@ -7,7 +7,6 @@ let content_secion = document.querySelector(".section_content");
 btn_cfmr.addEventListener('click', () => {
     let n = Capitalizar(name.value);
     let p = Capitalizar(pass.value);
-    console.log(n+" "+p);
     if (n !== "" && p !== "") {
         let nEncript = Encriptar(n);
         let pEncript = Encriptar(p);
